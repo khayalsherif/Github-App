@@ -19,12 +19,12 @@ package com.example.android.codelabs.paging.ui.adapter
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.example.android.codelabs.paging.model.Repo
+import com.example.android.codelabs.paging.data.local.repo.GithubRepoLocalDto
 
 /**
  * Adapter for the list of repositories.
  */
-class ReposAdapter : ListAdapter<Repo, RepoViewHolder>(REPO_COMPARATOR) {
+class ReposAdapter : ListAdapter<GithubRepoLocalDto, RepoViewHolder>(REPO_COMPARATOR) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RepoViewHolder {
         return RepoViewHolder.create(parent)
@@ -38,11 +38,11 @@ class ReposAdapter : ListAdapter<Repo, RepoViewHolder>(REPO_COMPARATOR) {
     }
 
     companion object {
-        private val REPO_COMPARATOR = object : DiffUtil.ItemCallback<Repo>() {
-            override fun areItemsTheSame(oldItem: Repo, newItem: Repo): Boolean =
+        private val REPO_COMPARATOR = object : DiffUtil.ItemCallback<GithubRepoLocalDto>() {
+            override fun areItemsTheSame(oldItem: GithubRepoLocalDto, newItem: GithubRepoLocalDto): Boolean =
                 oldItem.fullName == newItem.fullName
 
-            override fun areContentsTheSame(oldItem: Repo, newItem: Repo): Boolean =
+            override fun areContentsTheSame(oldItem: GithubRepoLocalDto, newItem: GithubRepoLocalDto): Boolean =
                 oldItem == newItem
         }
     }

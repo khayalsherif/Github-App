@@ -1,7 +1,9 @@
-package com.example.android.codelabs.paging.data.remote.github
+package com.example.android.codelabs.paging.data.remote.github_repo
 
 import retrofit2.http.GET
 import retrofit2.http.Query
+
+const val IN_QUALIFIER = "in:name,description"
 
 interface GithubService {
     @GET("search/repositories?sort=stars")

@@ -8,7 +8,7 @@ import com.example.android.codelabs.paging.data.GithubRepository
 import com.example.android.codelabs.paging.data.local.keys.RemoteKeysLocalDataSource
 import com.example.android.codelabs.paging.data.local.repo.GithubRepoLocalDataSource
 import com.example.android.codelabs.paging.data.local.repo.GithubRepoLocalDto
-import com.example.android.codelabs.paging.data.remote.github.GithubService
+import com.example.android.codelabs.paging.data.remote.github_repo.GithubService
 import com.example.android.codelabs.paging.domain.mediator.GithubRemoteMediator
 import kotlinx.coroutines.flow.Flow
 

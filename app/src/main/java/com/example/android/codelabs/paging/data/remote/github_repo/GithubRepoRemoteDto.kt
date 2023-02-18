@@ -1,4 +1,4 @@
-package com.example.android.codelabs.paging.data.remote.github
+package com.example.android.codelabs.paging.data.remote.github_repo
 
 import com.google.gson.annotations.SerializedName
 import com.squareup.moshi.JsonClass

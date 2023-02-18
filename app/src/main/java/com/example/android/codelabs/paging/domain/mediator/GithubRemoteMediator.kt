@@ -4,12 +4,12 @@ import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
-import com.example.android.codelabs.paging.api.IN_QUALIFIER
 import com.example.android.codelabs.paging.data.local.keys.RemoteKeysLocalDataSource
 import com.example.android.codelabs.paging.data.local.keys.RemoteKeysLocalDto
 import com.example.android.codelabs.paging.data.local.repo.GithubRepoLocalDataSource
 import com.example.android.codelabs.paging.data.local.repo.GithubRepoLocalDto
-import com.example.android.codelabs.paging.data.remote.github.GithubService
+import com.example.android.codelabs.paging.data.remote.github_repo.GithubService
+import com.example.android.codelabs.paging.data.remote.github_repo.IN_QUALIFIER
 import retrofit2.HttpException
 import java.io.IOException
 
