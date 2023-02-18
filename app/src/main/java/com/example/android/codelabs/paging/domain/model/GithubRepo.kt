@@ -1,6 +1,5 @@
 package com.example.android.codelabs.paging.domain.model
 
-
 data class GithubRepo(
     val name: String,
     val fullName: String,
