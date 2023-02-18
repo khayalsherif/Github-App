@@ -25,7 +25,7 @@ import androidx.lifecycle.distinctUntilChanged
 import androidx.lifecycle.liveData
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
-import com.example.android.codelabs.paging.data.GithubRepository
+import com.example.android.codelabs.paging.data.GithubRepositoryStart
 import com.example.android.codelabs.paging.model.RepoSearchResult
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.map
@@ -33,10 +33,10 @@ import kotlinx.coroutines.launch
 
 /**
  * ViewModel for the [SearchRepositoriesActivity] screen.
- * The ViewModel works with the [GithubRepository] to get the data.
+ * The ViewModel works with the [GithubRepositoryStart] to get the data.
  */
 class SearchRepositoriesViewModel(
-    private val repository: GithubRepository,
+    private val repository: GithubRepositoryStart,
     private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 

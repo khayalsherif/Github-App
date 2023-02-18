@@ -33,6 +33,7 @@ import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import com.example.android.codelabs.paging.Injection
 import com.example.android.codelabs.paging.databinding.ActivitySearchRepositoriesBinding
 import com.example.android.codelabs.paging.model.RepoSearchResult
+import com.example.android.codelabs.paging.ui.adapter.ReposAdapter
 
 class SearchRepositoriesActivity : AppCompatActivity() {
 

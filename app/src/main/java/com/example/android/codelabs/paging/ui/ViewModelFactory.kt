@@ -20,14 +20,14 @@ import androidx.lifecycle.AbstractSavedStateViewModelFactory
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.savedstate.SavedStateRegistryOwner
-import com.example.android.codelabs.paging.data.GithubRepository
+import com.example.android.codelabs.paging.data.GithubRepositoryStart
 
 /**
  * Factory for ViewModels
  */
 class ViewModelFactory(
     owner: SavedStateRegistryOwner,
-    private val repository: GithubRepository
+    private val repository: GithubRepositoryStart
 ) : AbstractSavedStateViewModelFactory(owner, null) {
 
     override fun <T : ViewModel?> create(
