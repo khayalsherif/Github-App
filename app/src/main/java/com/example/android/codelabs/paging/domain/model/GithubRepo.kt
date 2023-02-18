@@ -1,4 +1,4 @@
-package com.example.android.codelabs.paging.domain
+package com.example.android.codelabs.paging.domain.model
 
 
 data class GithubRepo(

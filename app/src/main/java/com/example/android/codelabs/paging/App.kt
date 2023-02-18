@@ -12,7 +12,7 @@ class App : Application() {
         super.onCreate()
         startKoin {
             val modules = listOf(dataModule, domainModule, presentationModule)
-            properties(mapOf("base" to "base_url"))
+            properties(mapOf("base" to "https://api.github.com/"))
             modules(modules)
             androidContext(this@App)
         }
