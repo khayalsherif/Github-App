@@ -87,8 +87,4 @@ val dataModule = module {
         )
     }
 
-    /////////////////////////////// REMOTE ERROR MAP ///////////////////////////////////////////////
-
-    // factory<ErrorMapper>(named(ERROR_MAPPER_NETWORK)) { RemoteErrorMapper() }
-
 }

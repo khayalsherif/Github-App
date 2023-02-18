@@ -6,5 +6,5 @@ import com.example.android.codelabs.paging.domain.model.GithubRepo
 import kotlinx.coroutines.flow.Flow
 
 interface GithubRepository {
-    fun getSearchResultStream(query: String): Flow<PagingData<GithubRepoLocalDto>>
+    fun getSearchResultStream(query: String): Flow<PagingData<GithubRepo>>
 }

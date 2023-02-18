@@ -87,10 +87,10 @@ class GithubRemoteMediator(
                 GithubRepoLocalDto(
                     id = it.id,
                     name = it.name,
-                    fullName = it.fullName,
+                    fullName = it.fullName!!,
                     description = it.description,
                     url = it.url,
-                    stars = it.stars,
+                    stars = it.stars!!,
                     forks = it.forks,
                     language = it.language
                 )
